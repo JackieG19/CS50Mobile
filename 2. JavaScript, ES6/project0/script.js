@@ -9,6 +9,19 @@ const list = document.getElementById('todo-list')
 const itemCountSpan = document.getElementById('item-count')
 const uncheckedCountSpan = document.getElementById('unchecked-count')
 
+let itemCount = 0;
+let listItems = [];
+
 function newTodo() {
-  alert('New TODO button clicked!')
+  
+  itemCount++;
+  itemCountSpan.innerHTML = itemCount;
+  let item = document.createElement("LI");
+  item.setAttribute("class", list);
+  item.innerHTML = "Todo Item " + itemCount;
+  list.appendChild(item);
 }
+ 
+
+// alert('New TODO button clicked!')
+
