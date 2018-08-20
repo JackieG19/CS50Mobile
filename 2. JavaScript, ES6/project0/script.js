@@ -21,6 +21,16 @@ function newTodo() {
   item.innerHTML = "Todo Item " + itemCount;
   list.appendChild(item);
 }
+
+
+// function uncheckTodo() {
+//   itemCount--;
+//   uncheckedCountSpan.innerHTML = itemCount;
+//   let item = document.createElement("LI");
+//   item.setAttribute("class");
+//   item.innerHTML = "Todo Item " + itemCount;
+//   list.removeChild(item);
+// }
  
 
 // alert('New TODO button clicked!')
